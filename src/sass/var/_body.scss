@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Glory', sans-serif;
+    font-size: 20px;
+    line-height: 1,40;
+    background-color: $background-color;
+    color: $prime-color;
+
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+    font-style: normal;
+
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+ul {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
