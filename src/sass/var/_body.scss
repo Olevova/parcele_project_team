@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* змінні основні */
+// :root {
+//     --background-color: #ffffff;
+//     --prime-color:#000000;
+//     --logoButton-color:#231F20;
+//     --second-color:#F7941E;
+//     --second-background:#FAFAFA;
+
+// }
+
+/* задаю основні кольори */
+body {
+    font-family: 'Glory', sans-serif;
+    font-size: 20px;
+    line-height: 1,40;
+    background-color: var(--background-color);
+    color: var(--prime-color);
+
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+ul {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+    padding-left: 0px;
+}
