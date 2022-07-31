@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Glory", sans-serif;
+  font-size: 20px;
+  line-height: 1, 40;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+ul {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: #F7941E;
+  color: #ffffff;
+  border: transparent;
+}
+
+.blod-card {
+  width: 1170px;
+  height: 370px;
+  background-color: #231F20;
+}/*# sourceMappingURL=index.css.map */
