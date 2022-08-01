@@ -44,17 +44,19 @@ line-height: 1.41;
 }
 
 .section-blog_blog-card {
-
+    width: 100%;
     margin-top: 80px;
     margin-bottom: 40px;
 }
 
 .blog-block {
+    
     display: flex;
     flex-direction: row;
 }
 
 .blog-card-sm {
+    color: black;
     padding: 48px;
     line-height: 1.41;
  
