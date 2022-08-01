@@ -1,0 +1,35 @@
+.header__block{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto ;
+    grid-template-areas:" b a a a c";
+    justify-content: start;
+    align-items: baseline;
+}
+
+.logo{
+    grid-area: b;
+    padding-right: 433px;
+    padding-left: 80px;
+}
+
+.header__link{
+    grid-area: a;
+    display: flex;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 1.22;
+    width: 331px;
+    & :not(:last-child)
+    {
+    margin-right: 31px;
+    }
+    & li{
+        text-align: center;
+    }
+}
+
+.header__button{
+    margin-left: 371px;
+    grid-area: c;
+}
