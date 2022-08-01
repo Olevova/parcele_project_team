@@ -21,10 +21,12 @@ button {
   text-decoration: none;
   cursor: pointer;
   font-style: normal;
+  color: transparent;
 }
 
 li {
   list-style: none;
+  color: transparent;
 }
 
 h1,
@@ -38,7 +40,7 @@ ul {
 }
 
 .container {
-  max-width: 1440px;
+  width: 1440px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -63,24 +65,30 @@ button {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  grid-template-areas: " b a a a c";
+  grid-template-areas: " b a c";
   justify-content: start;
   align-items: baseline;
 }
 
 .logo {
   grid-area: b;
-  padding-right: 433px;
-  padding-left: 80px;
+  margin-right: 433px;
+  margin-left: 80px;
+  background-color: transparent;
+  transition: transform 300ms linear;
+}
+.logo:hover {
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 60px;
+  text-align: center;
 }
 
 .header__link {
   grid-area: a;
   display: flex;
-  font-family: "Gilroy";
-  font-size: 18px;
-  line-height: 1.22;
   width: 331px;
+  transition: transform 300ms linear;
 }
 .header__link :not(:last-child) {
   margin-right: 31px;
@@ -88,10 +96,37 @@ button {
 .header__link li {
   text-align: center;
 }
+.header__link:hover .header__navlink {
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
 
 .header__button {
   margin-left: 371px;
   grid-area: c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #F7941E;
+  border-radius: 5px;
+  color: #F7941E;
+  background-color: transparent;
+  font-size: 18px;
+  width: 150px;
+  height: 44px;
+  transition: transform 300ms linear;
+}
+.header__button:hover {
+  transform: scale(1.25);
+  background-color: #F7941E;
+  color: aliceblue;
+}
+
+.header__navlink {
+  color: #000000;
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .work__container {
