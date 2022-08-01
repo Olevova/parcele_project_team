@@ -13,34 +13,40 @@
         margin-bottom: 23px;
 
         font-size: 32px;
-        line-height: 1.4;
     }
 
     &__descr {
         margin-bottom: 35px;
 
         font-size: 20px;
-        line-height: 1.4;
     }
+}
 
-    &__button {
-        min-width: 200px;
-        height: 60px;
-        padding: 0;
+.work__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    min-width: 200px;
+    height: 60px;
+    padding: 0;
 
-        font-size: 18px;
-        line-height: 1.35;
-        align-items: center;
-        text-align: center;
+    font-size: 18px;
+    line-height: 1.35;
+    text-transform: uppercase;
 
-        text-transform: uppercase;
+    color: $second-color;
+    background-color: transparent;
 
-        color: #F7941E;
-        background-color: transparent;
+    border: 1px solid $second-color;
+    border-radius: 5px;
 
-        border: 1px solid #F7941E;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+    transition: transform 300ms linear, background-color 300ms linear, color 300ms linear;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.25);
+            background-color: $second-color;
+            color: #ffffff;
+        }   
 }
